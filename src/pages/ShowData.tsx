@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { Context } from "../contexts/Context";
 
 export const ShowData = () => {
-  const { state, dispath } = useContext(Context);
+  const { state } = useContext(Context);
   return (
     <div>
       <h3>Tela ShowDAta</h3>
