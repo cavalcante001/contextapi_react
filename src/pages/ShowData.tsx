@@ -3,11 +3,13 @@ import { useContext } from "react";
 import { Context } from "../contexts/Context";
 
 export const ShowData = () => {
-  const { name } = useContext(Context);
+  const { state, dispath } = useContext(Context);
   return (
     <div>
-      Tela ShowData de {name};
+      <h3>Tela ShowDAta</h3>
+      Meu nome é: {state.user.name}
       <br />
+      Eu tenho {state.user.age} anos.
       <Link to="/">Voltar para Signup</Link>
     </div>
   );
